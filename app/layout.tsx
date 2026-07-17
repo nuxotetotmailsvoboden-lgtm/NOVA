@@ -1,8 +1,11 @@
 import "./globals.css";
 
-export const metadata = {
+import type { Metadata } from "next";
+import AppProvider from "@/providers/AppProvider";
+
+export const metadata: Metadata = {
   title: "NOVA",
-  description: "Premium Telegram Mini App Platform",
+  description: "Business OS",
 };
 
 export default function RootLayout({
@@ -12,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        <AppProvider>
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }
