@@ -8,12 +8,10 @@ import Container from "./ui/Container";
 export default function Hero() {
   return (
     <section className="hero">
-
       <div className="hero-glow hero-glow-left"></div>
       <div className="hero-glow hero-glow-right"></div>
 
-      <div className="hero-container">
-
+      <Container className="hero-container">
         <Badge>🚀 Premium Telegram Platform</Badge>
 
         <h1 className="hero-title">
@@ -28,19 +26,14 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-
-          <Button>
-            Создать проект
-          </Button>
+          <Button>Создать проект</Button>
 
           <Button variant="secondary">
             Смотреть демо
           </Button>
-
         </div>
 
         <div className="hero-stats">
-
           <Card className="hero-stat">
             <h3>100+</h3>
             <span>Проектов</span>
@@ -55,11 +48,8 @@ export default function Hero() {
             <h3>AI</h3>
             <span>Автоматизация</span>
           </Card>
-
         </div>
-
-      </div>
-
+      </Container>
     </section>
   );
 }
