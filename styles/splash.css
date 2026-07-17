@@ -1,38 +1,96 @@
 .nova-splash{
+
     width:100%;
     height:100vh;
 
+    overflow:hidden;
+
+    position:relative;
+
     display:flex;
-    flex-direction:column;
 
     justify-content:center;
+
     align-items:center;
 
     background:#05060A;
+
+}
+
+.nova-background{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(108,92,255,.28),
+    transparent 60%);
+
+    filter:blur(70px);
+
+    animation:pulse 4s ease-in-out infinite;
+
+}
+
+.nova-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:
+    opacity .9s ease,
+    transform .9s ease;
+
+}
+
+.nova-content.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
 }
 
 .nova-logo{
 
-    width:120px;
-    height:120px;
+    width:130px;
 
-    border-radius:30px;
+    height:130px;
 
-    background:linear-gradient(135deg,#6C5CFF,#8B5CF6);
+    margin:auto;
+
+    border-radius:32px;
+
+    background:linear-gradient(
+    135deg,
+    #6C5CFF,
+    #8B5CF6
+    );
 
     display:flex;
 
     justify-content:center;
+
     align-items:center;
-
-    font-size:60px;
-
-    font-weight:700;
 
     color:white;
 
+    font-size:62px;
+
+    font-weight:800;
+
     box-shadow:
-    0 0 60px rgba(108,92,255,.35);
+    0 0 30px rgba(108,92,255,.45),
+    0 0 80px rgba(108,92,255,.25);
 
 }
 
@@ -42,20 +100,50 @@
 
     color:white;
 
-    font-size:64px;
+    font-size:68px;
 
-    font-weight:800;
+    font-weight:900;
 
-    letter-spacing:12px;
+    letter-spacing:14px;
 
 }
 
 .nova-subtitle{
 
-    margin-top:14px;
+    margin-top:18px;
 
-    color:#8C95A6;
+    color:#98A2B3;
 
     font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.6;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.6;
+
+    }
 
 }
