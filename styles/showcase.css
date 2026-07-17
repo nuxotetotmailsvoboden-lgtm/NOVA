@@ -1,0 +1,166 @@
+.showcase{
+    padding:160px 0;
+}
+
+.showcase-header{
+    text-align:center;
+    margin-bottom:90px;
+}
+
+.showcase-header span{
+    color:#6C5CFF;
+    letter-spacing:3px;
+}
+
+.showcase-header h2{
+    margin:18px 0;
+    font-size:56px;
+    color:white;
+}
+
+.showcase-header p{
+    color:#9CA3AF;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.showcase-scene{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.device-frame{
+
+    background:#0E1118;
+
+    border:1px solid #262D3B;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 40px 120px rgba(0,0,0,.45);
+
+}
+
+.device-screen{
+
+    padding:24px;
+
+}
+
+.laptop{
+
+    width:760px;
+
+    height:460px;
+
+}
+
+.phone{
+
+    width:260px;
+
+    height:520px;
+
+}
+
+.mock-navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:30px;
+
+}
+
+.mock-menu{
+
+    display:flex;
+
+    gap:18px;
+
+    color:#8892A6;
+
+}
+
+.mock-chart{
+
+    height:170px;
+
+    border-radius:18px;
+
+    background:
+    linear-gradient(135deg,#6C5CFF,#2D8CFF);
+
+    margin-bottom:24px;
+
+}
+
+.mock-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+}
+
+.mini-card{
+
+    height:90px;
+
+    border-radius:16px;
+
+    background:#171C26;
+
+}
+
+.telegram-header{
+
+    text-align:center;
+
+    margin-bottom:24px;
+
+    font-weight:700;
+
+}
+
+.telegram-card{
+
+    padding:18px;
+
+    background:#171C26;
+
+    border-radius:16px;
+
+    margin-bottom:14px;
+
+}
+
+.telegram-button{
+
+    width:100%;
+
+    height:50px;
+
+    margin-top:24px;
+
+    border-radius:16px;
+
+    background:#6C5CFF;
+
+    color:white;
+
+}
