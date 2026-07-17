@@ -1,0 +1,88 @@
+.nova-btn{
+    height:52px;
+    padding:0 26px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.nova-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.nova-btn-primary{
+
+    background:#6C5CFF;
+
+    color:white;
+
+}
+
+.nova-btn-secondary{
+
+    background:#181C27;
+
+    color:white;
+
+    border:1px solid #2C3445;
+
+}
+
+.nova-btn-ghost{
+
+    background:transparent;
+
+    color:white;
+
+}
+
+.nova-card{
+
+    background:#10131A;
+
+    border:1px solid #232938;
+
+    border-radius:24px;
+
+    padding:28px;
+
+}
+
+.nova-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#171B24;
+
+    border:1px solid #232938;
+
+    color:#B8C0D1;
+
+    font-size:13px;
+
+}
