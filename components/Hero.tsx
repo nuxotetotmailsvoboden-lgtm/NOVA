@@ -3,6 +3,7 @@
 import Button from "./ui/Button";
 import Badge from "./ui/Badge";
 import Card from "./ui/Card";
+import Container from "./ui/Container";
 
 export default function Hero() {
   return (
