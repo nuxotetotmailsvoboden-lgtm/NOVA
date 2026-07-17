@@ -1,44 +1,64 @@
 "use client";
 
+import Button from "./ui/Button";
+import Badge from "./ui/Badge";
+import Card from "./ui/Card";
+
 export default function Hero() {
   return (
-    <main className="hero">
+    <section className="hero">
 
-      <div className="hero-blur hero-blur-1"></div>
-      <div className="hero-blur hero-blur-2"></div>
+      <div className="hero-glow hero-glow-left"></div>
+      <div className="hero-glow hero-glow-right"></div>
 
-      <section className="hero-card">
+      <div className="hero-container">
 
-        <span className="hero-badge">
-          🚀 Premium Platform
-        </span>
+        <Badge>🚀 Premium Telegram Platform</Badge>
 
-        <h1>
-          Build your
+        <h1 className="hero-title">
+          Создаем Telegram-
           <br />
-          Telegram Business
+          продукты нового поколения
         </h1>
 
-        <p>
-          Design premium Telegram bots,
-          Mini Apps and automations
-          with NOVA.
+        <p className="hero-description">
+          Mini Apps, Telegram-боты, CRM, AI-ассистенты,
+          автоматизация бизнеса и индивидуальная разработка.
         </p>
 
-        <div className="hero-buttons">
+        <div className="hero-actions">
 
-          <button className="primary">
-            Start Building
-          </button>
+          <Button>
+            Создать проект
+          </Button>
 
-          <button className="secondary">
-            Watch Demo
-          </button>
+          <Button variant="secondary">
+            Смотреть демо
+          </Button>
 
         </div>
 
-      </section>
+        <div className="hero-stats">
 
-    </main>
+          <Card className="hero-stat">
+            <h3>100+</h3>
+            <span>Проектов</span>
+          </Card>
+
+          <Card className="hero-stat">
+            <h3>24/7</h3>
+            <span>Поддержка</span>
+          </Card>
+
+          <Card className="hero-stat">
+            <h3>AI</h3>
+            <span>Автоматизация</span>
+          </Card>
+
+        </div>
+
+      </div>
+
+    </section>
   );
 }
