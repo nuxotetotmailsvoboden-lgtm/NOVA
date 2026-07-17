@@ -1,0 +1,13 @@
+interface BadgeProps {
+  children: React.ReactNode;
+}
+
+export default function Badge({
+  children,
+}: BadgeProps) {
+  return (
+    <span className="nova-badge">
+      {children}
+    </span>
+  );
+}
