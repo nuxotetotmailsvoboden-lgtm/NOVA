@@ -1,0 +1,61 @@
+.nova-splash{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#05060A;
+}
+
+.nova-logo{
+
+    width:120px;
+    height:120px;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#6C5CFF,#8B5CF6);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    color:white;
+
+    box-shadow:
+    0 0 60px rgba(108,92,255,.35);
+
+}
+
+.nova-title{
+
+    margin-top:35px;
+
+    color:white;
+
+    font-size:64px;
+
+    font-weight:800;
+
+    letter-spacing:12px;
+
+}
+
+.nova-subtitle{
+
+    margin-top:14px;
+
+    color:#8C95A6;
+
+    font-size:18px;
+
+}
