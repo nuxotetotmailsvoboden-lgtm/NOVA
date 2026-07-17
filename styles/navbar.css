@@ -1,0 +1,123 @@
+.nova-navbar{
+
+    position:fixed;
+
+    top:24px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(1400px,94%);
+
+    height:76px;
+
+    padding:0 22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    border-radius:24px;
+
+    background:rgba(16,19,26,.72);
+
+    backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
+}
+
+.nova-logo-wrap{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.nova-logo-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,#6C5CFF,#8B5CF6);
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+.nova-logo-text h2{
+
+    color:#fff;
+
+    font-size:20px;
+
+    margin:0;
+
+}
+
+.nova-logo-text span{
+
+    color:#9CA3AF;
+
+    font-size:12px;
+
+}
+
+.nova-menu{
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+.nova-menu-item{
+
+    color:#B9C1CF;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.nova-menu-item:hover{
+
+    color:#fff;
+
+}
+
+.nova-navbar-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.nova-layout{
+
+    padding-top:120px;
+
+}
