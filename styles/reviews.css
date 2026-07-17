@@ -1,0 +1,116 @@
+.reviews{
+    padding:160px 0;
+    position:relative;
+}
+
+.reviews-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.reviews-header span{
+    display:inline-block;
+    color:#7C7CFF;
+    letter-spacing:3px;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.reviews-header h2{
+    color:#fff;
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.reviews-header p{
+    width:720px;
+    max-width:100%;
+    margin:auto;
+    color:#98A2B3;
+    line-height:1.8;
+}
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.review-card{
+    position:relative;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.review-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(108,92,255,.12),
+        transparent 60%
+    );
+    opacity:0;
+    transition:.35s;
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#6C5CFF;
+
+}
+
+.review-card:hover::before{
+
+    opacity:1;
+
+}
+
+.review-stars{
+
+    font-size:22px;
+
+    margin-bottom:24px;
+
+}
+
+.review-text{
+
+    color:#C7D0DD;
+
+    line-height:1.9;
+
+    margin-bottom:32px;
+
+    min-height:130px;
+
+}
+
+.review-author{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.review-author strong{
+
+    color:#fff;
+
+    font-size:18px;
+
+}
+
+.review-author span{
+
+    color:#8B95A8;
+
+    font-size:14px;
+
+}
