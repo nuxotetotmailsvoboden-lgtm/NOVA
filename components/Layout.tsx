@@ -1,20 +1,24 @@
 "use client";
 
 import { ReactNode } from "react";
+
 import Navbar from "./Navbar";
+import Background from "./background/Background";
 
 interface Props {
-  children: ReactNode;
+    children: ReactNode;
 }
 
 export default function Layout({ children }: Props) {
-  return (
-    <>
-      <Navbar />
+    return (
+        <>
+            <Background />
 
-      <main className="nova-layout">
-        {children}
-      </main>
-    </>
-  );
+            <Navbar />
+
+            <main className="nova-layout">
+                {children}
+            </main>
+        </>
+    );
 }
